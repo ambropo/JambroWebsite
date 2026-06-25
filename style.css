@@ -85,7 +85,9 @@ hr.trule{border:none; height:8px; margin:9px 0 2px; background-repeat:repeat-x; 
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='8' viewBox='0 0 320 8'%3E%3Cfilter id='r'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9 0.06' numOctaves='2' seed='4' result='n'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='n' scale='1.2'/%3E%3C/filter%3E%3Cg filter='url(%23r)' fill='none' stroke='%23c4cad6' stroke-linecap='round'%3E%3Cpath d='M0 4.0 C 18 3.5, 34 3.6, 52 4.1 C 70 4.5, 92 4.4, 110 3.9 C 126 3.6, 150 3.5, 168 4.0 C 188 4.5, 206 4.6, 226 4.0 C 244 3.6, 268 3.5, 286 4.0 C 302 4.3, 312 4.2, 320 4.0' stroke-width='2.1' stroke-opacity='0.95'/%3E%3Cpath d='M0 4.5 C 18 4.0, 34 4.1, 52 4.6 C 70 5.0, 92 4.9, 110 4.4 C 126 4.1, 150 4.0, 168 4.5 C 188 5.0, 206 5.1, 226 4.5 C 244 4.1, 268 4.0, 286 4.5 C 302 4.8, 312 4.7, 320 4.5' stroke-width='1.1' stroke-opacity='0.45'/%3E%3C/g%3E%3C/svg%3E")}
 
 .links{font-size:13.7px; line-height:2.1; margin-top:6px}
+.links + .links{margin-top:2px}
 .links .sep{display:none}
+.links .lbl{display:inline-block; margin-right:4px; color:var(--muted); font-weight:600}
 .links a, .links button{display:inline-block; margin:0 6px 4px 0;
   background:var(--accent-soft); border:1px solid var(--bubble-bd); border-radius:7px;
   padding:3px 11px; color:var(--bubble); font:inherit; cursor:pointer}
