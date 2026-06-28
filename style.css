@@ -11,7 +11,7 @@ body{margin:0; color:var(--ink); background:var(--bg);
   font:16px/1.6 "Fira Sans","Helvetica Neue",Arial,sans-serif; overflow-x:hidden;}
 a{color:var(--accent); text-decoration:none}
 a:hover{text-decoration:underline}
-.wrap{max-width:1120px; margin:0 auto; padding:42px 22px 80px}
+.wrap{max-width:1350px; margin:0 auto; padding:42px 28px 80px}
 
 /* ===== HOME (centered, Michaillat-style) ===== */
 .home{max-width:720px; margin:0 auto; text-align:left}
@@ -71,7 +71,7 @@ h2::before{content:""; width:5px; height:21px; background:var(--accent); border-
 
 /* ===== paper entries: dotted separators + bubble links ===== */
 .paper{padding:15px 0; background-repeat:repeat-x; background-position:left bottom; background-size:320px 8px;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='8' viewBox='0 0 320 8'%3E%3Cfilter id='q'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9 0.06' numOctaves='2' seed='4' result='n'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='n' scale='1.2'/%3E%3C/filter%3E%3Cg filter='url(%23q)' fill='none' stroke='%23c4cad6' stroke-linecap='round'%3E%3Cpath d='M0 4.0 C 18 3.5, 34 3.6, 52 4.1 C 70 4.5, 92 4.4, 110 3.9 C 126 3.6, 150 3.5, 168 4.0 C 188 4.5, 206 4.6, 226 4.0 C 244 3.6, 268 3.5, 286 4.0 C 302 4.3, 312 4.2, 320 4.0' stroke-width='2.1' stroke-opacity='0.95'/%3E%3Cpath d='M0 4.5 C 18 4.0, 34 4.1, 52 4.6 C 70 5.0, 92 4.9, 110 4.4 C 126 4.1, 150 4.0, 168 4.5 C 188 5.0, 206 5.1, 226 4.5 C 244 4.1, 268 4.0, 286 4.5 C 302 4.8, 312 4.7, 320 4.5' stroke-width='1.1' stroke-opacity='0.45'/%3E%3C/g%3E%3C/svg%3E")}
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='8' viewBox='0 0 320 8'%3E%3Cfilter id='q'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9 0.06' numOctaves='2' seed='4' result='n'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='n' scale='1.2'/%3E%3C/filter%3E%3Cg filter='url(%23q)' fill='none' stroke='%23c4cad6' stroke-linecap='round'%3E%3Cpath d='M0 4.0 C 18 3.3, 34 3.44, 52 4.14 C 70 4.7, 92 4.56, 110 3.86 C 126 3.44, 150 3.3, 168 4.0 C 188 4.7, 206 4.84, 226 4.0 C 244 3.44, 268 3.3, 286 4.0 C 302 4.42, 312 4.28, 320 4.0' stroke-width='2.1' stroke-opacity='0.95'/%3E%3Cpath d='M0 4.5 C 18 3.8, 34 3.94, 52 4.64 C 70 5.2, 92 5.06, 110 4.36 C 126 3.94, 150 3.8, 168 4.5 C 188 5.2, 206 5.34, 226 4.5 C 244 3.94, 268 3.8, 286 4.5 C 302 4.92, 312 4.78, 320 4.5' stroke-width='1.1' stroke-opacity='0.45'/%3E%3C/g%3E%3C/svg%3E")}
 .paper:last-of-type{background-image:none}
 .paper .t{font-weight:600; font-size:17px; line-height:1.42}
 .paper .a{color:var(--muted); font-size:15px; margin:2px 0 8px}
@@ -82,7 +82,7 @@ h2::before{content:""; width:5px; height:21px; background:var(--accent); border-
 .paper .outlet{font-size:15px; margin:3px 0 1px; color:var(--ink); font-weight:500}
 .paper .outlet em{font-style:normal; font-weight:700; color:var(--bubble)}
 hr.trule{border:none; height:8px; margin:9px 0 2px; background-repeat:repeat-x; background-position:left center; background-size:320px 8px;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='8' viewBox='0 0 320 8'%3E%3Cfilter id='r'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9 0.06' numOctaves='2' seed='4' result='n'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='n' scale='1.2'/%3E%3C/filter%3E%3Cg filter='url(%23r)' fill='none' stroke='%23c4cad6' stroke-linecap='round'%3E%3Cpath d='M0 4.0 C 18 3.5, 34 3.6, 52 4.1 C 70 4.5, 92 4.4, 110 3.9 C 126 3.6, 150 3.5, 168 4.0 C 188 4.5, 206 4.6, 226 4.0 C 244 3.6, 268 3.5, 286 4.0 C 302 4.3, 312 4.2, 320 4.0' stroke-width='2.1' stroke-opacity='0.95'/%3E%3Cpath d='M0 4.5 C 18 4.0, 34 4.1, 52 4.6 C 70 5.0, 92 4.9, 110 4.4 C 126 4.1, 150 4.0, 168 4.5 C 188 5.0, 206 5.1, 226 4.5 C 244 4.1, 268 4.0, 286 4.5 C 302 4.8, 312 4.7, 320 4.5' stroke-width='1.1' stroke-opacity='0.45'/%3E%3C/g%3E%3C/svg%3E")}
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='8' viewBox='0 0 320 8'%3E%3Cfilter id='r'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9 0.06' numOctaves='2' seed='4' result='n'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='n' scale='1.2'/%3E%3C/filter%3E%3Cg filter='url(%23r)' fill='none' stroke='%23c4cad6' stroke-linecap='round'%3E%3Cpath d='M0 4.0 C 18 3.3, 34 3.44, 52 4.14 C 70 4.7, 92 4.56, 110 3.86 C 126 3.44, 150 3.3, 168 4.0 C 188 4.7, 206 4.84, 226 4.0 C 244 3.44, 268 3.3, 286 4.0 C 302 4.42, 312 4.28, 320 4.0' stroke-width='2.1' stroke-opacity='0.95'/%3E%3Cpath d='M0 4.5 C 18 3.8, 34 3.94, 52 4.64 C 70 5.2, 92 5.06, 110 4.36 C 126 3.94, 150 3.8, 168 4.5 C 188 5.2, 206 5.34, 226 4.5 C 244 3.94, 268 3.8, 286 4.5 C 302 4.92, 312 4.78, 320 4.5' stroke-width='1.1' stroke-opacity='0.45'/%3E%3C/g%3E%3C/svg%3E")}
 
 .links{font-size:13.7px; line-height:2.1; margin-top:6px}
 .links + .links{margin-top:2px}
@@ -103,7 +103,7 @@ hr.trule{border:none; height:8px; margin:9px 0 2px; background-repeat:repeat-x; 
 .links button.tl:hover{background:#e2ecfb}
 
 /* ===== news (home) ===== */
-.newsblock{max-width:680px; margin:26px 0 0; text-align:left}
+.newsblock{max-width:none; margin:26px 0 0; text-align:left}
 ul.news{list-style:none; padding:0; margin:8px 0 0}
 ul.news li{margin:8px 0; font-size:16px; display:flex; gap:12px}
 ul.news .date{flex:0 0 84px; color:var(--accent); font-weight:600; font-size:14.5px}
@@ -127,9 +127,9 @@ footer{margin-top:46px; padding-top:16px; border-top:1px solid var(--line);
    ============================================================ */
 
 /* two-column shell */
-.layout{display:flex; gap:54px; align-items:flex-start; max-width:980px; margin:0 auto}
-.sidebar{flex:0 0 196px; position:sticky; top:32px; align-self:flex-start}
-.content{flex:1 1 auto; min-width:0; max-width:680px; text-align:left}
+.layout{display:flex; gap:60px; align-items:flex-start; max-width:none; margin:0 auto}
+.sidebar{flex:0 0 200px; position:sticky; top:32px; align-self:flex-start}
+.content{flex:1 1 auto; min-width:0; max-width:none; text-align:left}
 
 /* sidebar identity block */
 .sidebar .brand{display:flex; align-items:center; gap:9px; font-size:18px;
@@ -146,6 +146,10 @@ nav.side a.cur{background:var(--accent-soft); border-color:var(--bubble-bd);
 
 /* the in-page section heading (h2) sits flush at the top of the content column */
 .content h2:first-child{margin-top:0}
+
+/* prose-heavy pages (home, bio) cap the text column for readability while the
+   list/paper pages stay full-width */
+.content.measure{max-width:1000px}
 
 /* ===== mobile top bar (hidden on desktop) =====
    On a LARGE window there is no top bar: just the left sidebar + content.
