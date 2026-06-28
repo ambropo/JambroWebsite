@@ -9,20 +9,28 @@
 <body>
 <div class="wrap">
 
-  <header class="site">
-    <nav class="main">
-      <a href="index.html">Home</a>
-      <a href="publications.html">Publications</a>
-      <a href="working-papers.html">Working Papers</a>
-      <a href="discussions.html">Discussions</a>
-      <a href="var-toolbox.html" class="cur">VAR Toolbox</a>
-      <span class="brk"></span>
-      <a href="replications.html">Replications</a>
-      <a href="lecture-notes.html">Teaching</a>
-      <a href="policy.html">Policy</a>
-      <a href="bio.html">Bio</a>
-    </nav>
+  <header class="topbar">
+    <button class="navtoggle" aria-label="Open menu" onclick="document.getElementById('side').classList.toggle('open')"><span class="bars"><span></span><span></span><span></span></span></button>
+    <a class="topbrand" href="index.html"><span class="sq"></span>Ambrogio Cesa-Bianchi</a>
   </header>
+  <div class="layout">
+
+    <aside class="sidebar" id="side" onmouseleave="this.classList.remove('open')">
+      <a class="brand" href="index.html"><span class="sq"></span>Ambrogio<br>Cesa-Bianchi</a>
+      <nav class="side">
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="working-papers.html">Working Papers</a>
+        <a href="discussions.html">Discussions</a>
+        <a href="var-toolbox.html" class="cur">VAR Toolbox</a>
+        <a href="replications.html">Replications</a>
+        <a href="lecture-notes.html">Teaching</a>
+        <a href="policy.html">Policy</a>
+        <a href="bio.html">Bio</a>
+      </nav>
+    </aside>
+
+    <main class="content">
 
   <h2>VAR Toolbox</h2>
   <div class="paper">
@@ -52,7 +60,10 @@
     </div>
   </div>
 
-  <footer>© Ambrogio Cesa-Bianchi · the views on this site are personal and not those of the Bank of England.</footer>
+      <footer>© Ambrogio Cesa-Bianchi · the views on this site are personal and not those of the Bank of England.</footer>
+    </main>
+
+  </div>
 </div>
 </body>
 </html>

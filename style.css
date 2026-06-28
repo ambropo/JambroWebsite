@@ -118,3 +118,64 @@ ul.news .date{flex:0 0 84px; color:var(--accent); font-weight:600; font-size:14.
 
 footer{margin-top:46px; padding-top:16px; border-top:1px solid var(--line);
   color:var(--muted); font-size:13.5px; text-align:center}
+
+/* ============================================================
+   LEFT SIDEBAR LAYOUT
+   Section navigation lives in a sticky left column on large
+   screens; on small screens it collapses behind a top bar and
+   slides in as an off-canvas drawer.
+   ============================================================ */
+
+/* two-column shell */
+.layout{display:flex; gap:54px; align-items:flex-start; max-width:980px; margin:0 auto}
+.sidebar{flex:0 0 196px; position:sticky; top:32px; align-self:flex-start}
+.content{flex:1 1 auto; min-width:0; max-width:680px; text-align:left}
+
+/* sidebar identity block */
+.sidebar .brand{display:flex; align-items:center; gap:9px; font-size:18px;
+  font-weight:700; color:var(--ink); margin-bottom:18px; white-space:normal; line-height:1.25}
+.sidebar .brand .sq{width:14px; height:14px; border-radius:3px; background:var(--accent); flex:0 0 auto}
+
+/* vertical section nav (replaces nav.main / .menu) */
+nav.side{display:flex; flex-direction:column; gap:2px; margin:0 0 22px}
+nav.side a{color:var(--ink); font-size:15.5px; padding:5px 12px; border-radius:7px;
+  border:1px solid transparent; line-height:1.3}
+nav.side a:hover{background:var(--accent-soft); text-decoration:none; color:var(--accent)}
+nav.side a.cur{background:var(--accent-soft); border-color:var(--bubble-bd);
+  color:var(--bubble); font-weight:600}
+
+/* the in-page section heading (h2) sits flush at the top of the content column */
+.content h2:first-child{margin-top:0}
+
+/* ===== mobile top bar (hidden on desktop) =====
+   On a LARGE window there is no top bar: just the left sidebar + content.
+   On a SMALL window the sidebar is gone and this bar appears, holding the ☰
+   hamburger and the site title. */
+.topbar{display:none}
+.navtoggle{display:inline-flex; align-items:center; background:none; border:none;
+  color:var(--ink); cursor:pointer; padding:6px; margin:0; border-radius:7px}
+.navtoggle:hover{background:var(--accent-soft)}
+.navtoggle .bars{display:inline-flex; flex-direction:column; gap:4px}
+.navtoggle .bars span{width:21px; height:2.4px; background:var(--ink); border-radius:2px}
+.topbrand{display:inline-flex; align-items:center; gap:9px; font-size:17px;
+  font-weight:700; color:var(--ink); white-space:nowrap}
+.topbrand:hover{text-decoration:none}
+.topbrand .sq{width:14px; height:14px; border-radius:3px; background:var(--accent); flex:0 0 auto}
+
+/* narrow screens: hide the sidebar-as-column; show the top bar; the sidebar
+   becomes an OFF-CANVAS DRAWER that slides in over the page when ☰ is tapped
+   and slides back out when the mouse leaves it. */
+@media (max-width:760px){
+  .layout{display:block}
+  .content{max-width:none; padding-top:54px}   /* clear the fixed top bar */
+
+  .topbar{display:flex; align-items:center; gap:13px;
+    position:fixed; top:0; left:0; right:0; z-index:55; height:54px;
+    padding:0 16px; background:#fff; border-bottom:1px solid var(--line)}
+
+  .sidebar{position:fixed; top:0; left:0; z-index:60; height:100vh; width:250px;
+    margin:0; padding:22px 24px 24px; background:#fff; overflow-y:auto;
+    box-shadow:7px 0 30px rgba(28,37,51,.17);
+    transform:translateX(-105%); transition:transform .26s ease}
+  .sidebar.open{transform:translateX(0)}
+}

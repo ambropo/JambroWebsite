@@ -9,20 +9,28 @@
 <body>
 <div class="wrap">
 
-  <header class="site">
-    <nav class="main">
-      <a href="index.html">Home</a>
-      <a href="publications.html">Publications</a>
-      <a href="working-papers.html">Working Papers</a>
-      <a href="discussions.html">Discussions</a>
-      <a href="var-toolbox.html">VAR Toolbox</a>
-      <span class="brk"></span>
-      <a href="replications.html">Replications</a>
-      <a href="lecture-notes.html">Teaching</a>
-      <a href="policy.html" class="cur">Policy</a>
-      <a href="bio.html">Bio</a>
-    </nav>
+  <header class="topbar">
+    <button class="navtoggle" aria-label="Open menu" onclick="document.getElementById('side').classList.toggle('open')"><span class="bars"><span></span><span></span><span></span></span></button>
+    <a class="topbrand" href="index.html"><span class="sq"></span>Ambrogio Cesa-Bianchi</a>
   </header>
+  <div class="layout">
+
+    <aside class="sidebar" id="side" onmouseleave="this.classList.remove('open')">
+      <a class="brand" href="index.html"><span class="sq"></span>Ambrogio<br>Cesa-Bianchi</a>
+      <nav class="side">
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="working-papers.html">Working Papers</a>
+        <a href="discussions.html">Discussions</a>
+        <a href="var-toolbox.html">VAR Toolbox</a>
+        <a href="replications.html">Replications</a>
+        <a href="lecture-notes.html">Teaching</a>
+        <a href="policy.html" class="cur">Policy</a>
+        <a href="bio.html">Bio</a>
+      </nav>
+    </aside>
+
+    <main class="content">
 
   <h2>Policy Writings</h2>
 
@@ -194,7 +202,10 @@
     <div class="tldr">A renminbi revaluation is no cure-all for Latin America: a 10% revaluation would cut Chinese growth by ~0.5%, US growth by ~0.15% and Latin American growth by ~0.3%.</div>
   </div>
 
-  <footer>© Ambrogio Cesa-Bianchi · the views on this site are personal and not those of the Bank of England.</footer>
+      <footer>© Ambrogio Cesa-Bianchi · the views on this site are personal and not those of the Bank of England.</footer>
+    </main>
+
+  </div>
 </div>
 <script>function tldr(b){b.closest('.paper').querySelector('.tldr').classList.toggle('open');}</script>
 </body>
